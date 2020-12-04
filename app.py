@@ -19,13 +19,11 @@ chrome_options.add_argument("--no-sandbox")
 driver = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"), options=chrome_options)
 
 def main():
-    arquivo = open("log.txt", 'w')
+    
 
     driver.get('https://google.com.br/')
 
-    arquivo.write(driver.page_source)
-
-    arquivo.close()
+    print(driver.page_source)
 
 
 if __name__ == '__main__':
