@@ -25,7 +25,7 @@ def main():
 
     arquivo.write(driver.page_source)
 
-
+    arquivo.close()
 
 
 if __name__ == '__main__':
